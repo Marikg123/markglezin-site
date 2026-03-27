@@ -1,0 +1,8 @@
+.DS_Store
+site/images/paintings/**/*.jpg
+site/images/paintings/**/*.JPG
+site/images/paintings/**/*.jpeg
+site/images/paintings/**/*.png
+site/images/paintings/**/*.tif
+!site/images/about.jpg
+node_modules/
