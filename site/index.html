@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Glezin — Contemporary Figurative Painter | Tel Aviv</title>
+  <meta name="description" content="Mark Glezin is a contemporary figurative painter based in Tel Aviv, Israel. Explore original oil paintings, portraits, landscapes, and watercolors. Available for commissions and exhibitions worldwide.">
+  <meta name="keywords" content="Mark Glezin, figurative painter, contemporary art, oil paintings, portraits, Tel Aviv artist, Israeli art, fine art, commission portrait">
+  <link rel="canonical" href="https://www.markglezin.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mark Glezin — Contemporary Figurative Painter">
+  <meta property="og:description" content="Contemporary figurative painter based in Tel Aviv. Oil paintings, portraits, landscapes, and watercolors.">
+  <meta property="og:image" content="https://www.markglezin.com/images/hero.webp">
+  <meta property="og:url" content="https://www.markglezin.com/">
+  <meta property="og:site_name" content="Mark Glezin">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mark Glezin — Contemporary Figurative Painter">
+  <meta name="twitter:description" content="Contemporary figurative painter based in Tel Aviv, Israel.">
+  <meta name="twitter:image" content="https://www.markglezin.com/images/hero.webp">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" as="image" href="images/hero.webp">
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mark Glezin",
+    "url": "https://www.markglezin.com",
+    "image": "https://www.markglezin.com/images/about.webp",
+    "jobTitle": "Figurative Painter",
+    "description": "Contemporary figurative painter based in Tel Aviv, Israel, working in oil on panel, oil on canvas, and watercolor.",
+    "sameAs": [
+      "https://www.facebook.com/MarkGlezinART/",
+      "https://www.instagram.com/markglezinart/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tel Aviv",
+      "addressCountry": "IL"
+    },
+    "knowsAbout": ["Oil Painting", "Figurative Art", "Portrait Painting", "Watercolor", "Contemporary Art"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Left Sidebar -->
+  <aside class="sidebar">
+    <div class="site-title"><a href="index.html">Mark Glezin</a></div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="active">Home</a>
+      <div class="nav-group" id="work-group">
+        <a href="works.html">Work</a>
+        <nav class="nav-sub" id="work-sub" aria-label="Work categories"></nav>
+      </div>
+      <div class="nav-gap"></div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="sidebar-social">
+      <a href="https://www.facebook.com/MarkGlezinART/" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/markglezinart/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Mobile Header (shown only on small screens) -->
+  <div class="mobile-header">
+    <div class="mobile-title"><a href="index.html">Mark Glezin</a></div>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" role="dialog" aria-label="Navigation">
+    <button class="close-btn" aria-label="Close menu">×</button>
+    <a href="index.html" class="active">Home</a>
+    <a href="works.html">Work</a>
+    <div class="mobile-sub" id="mobile-work-sub"></div>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <section class="hero">
+      <img
+        src="images/hero.webp"
+        alt="Mark Glezin — Figurative Painter"
+        loading="eager"
+      >
+    </section>
+  </div>
+
+  <script src="gallery.js"></script>
+  <script>
+  // Build Work submenu from gallery data
+  (function(){
+    if (!window.GALLERY) return;
+    var cats = GALLERY.categories || [];
+    ['work-sub','mobile-work-sub'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (!el) return;
+      cats.forEach(function(cat){
+        var slug = cat.toLowerCase().replace(/\s+/g,'-');
+        var a = document.createElement('a');
+        a.href = 'works.html#' + slug;
+        a.textContent = cat;
+        el.appendChild(a);
+      });
+    });
+  })();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
