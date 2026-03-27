@@ -136,7 +136,21 @@
 
   function buildItems(list) {
     gallery.innerHTML = '';
+
+    // Remove any previous preload links
+    document.querySelectorAll('link[data-gallery-preload]').forEach(l => l.remove());
+
     if (!list.length) { initLightboxClicks(); return; }
+
+    // Preload first 6 thumbnails (2 rows) for instant display
+    list.slice(0, 6).forEach(p => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = p.thumb || p.file;
+      link.setAttribute('data-gallery-preload', '');
+      document.head.appendChild(link);
+    });
 
     // Create column containers
     const cols = [];
@@ -153,11 +167,16 @@
       item.className = 'gallery-item';
       item.dataset.title = p.title + (p.sold ? ' — Sold' : '');
       item.dataset.idx   = i;   // visual order for lightbox navigation
+      item.dataset.full  = p.file;  // full-size for lightbox
 
       const img = document.createElement('img');
-      img.src     = p.file;
-      img.alt     = p.title;
-      img.loading = i < 9 ? 'eager' : 'lazy';
+      img.src      = p.thumb || p.file;  // use thumbnail in grid
+      img.alt      = p.title;
+      img.width    = p.tw || p.w;
+      img.height   = p.th || p.h;
+      img.loading  = i < 9 ? 'eager' : 'lazy';
+      img.decoding = 'async';
+      if (i < 3) img.fetchPriority = 'high';
 
       item.appendChild(img);
       cols[i % NUM_COLS].appendChild(item);
@@ -199,8 +218,8 @@
   }
   function showSlide() {
     const it  = items[idx];
-    const img = it.querySelector('img');
-    lbImg.src = img.src || img.dataset.src || '';
+    // Use full-size image for lightbox (data-full), not thumbnail
+    lbImg.src = it.dataset.full || it.querySelector('img').src;
     lbImg.alt = it.dataset.title;
     lbCaption.textContent = it.dataset.title || '';
   }
