@@ -98,6 +98,7 @@
     <button class="lightbox-close" aria-label="Close">×</button>
     <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
     <div class="lightbox-img-wrap">
+      <div class="lb-spinner" id="lb-spinner"></div>
       <img id="lb-img" src="" alt="">
     </div>
     <div class="lightbox-caption" id="lb-caption"></div>
@@ -215,28 +216,111 @@
   const lightbox  = document.getElementById('lightbox');
   const lbImg     = document.getElementById('lb-img');
   const lbCaption = document.getElementById('lb-caption');
+  const lbSpinner = document.getElementById('lb-spinner');
   let items = [], idx = 0;
+  let transitioning = false;          // blocks rapid clicks
+  const FADE_MS = 250;                // matches CSS transition duration
+  const SPINNER_DELAY = 300;          // show spinner only if load > 300ms
 
   function openLightbox(list, i) {
-    items = list; idx = i; showSlide();
+    items = list; idx = i;
+    // Show immediately (no fade-in on first open)
+    lbImg.classList.remove('fading');
+    lbCaption.classList.remove('fading');
+    showSlide(false);
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
-  function showSlide() {
-    const it  = items[idx];
-    // Use full-size image for lightbox (data-full), not thumbnail
-    lbImg.src = it.dataset.full || it.querySelector('img').src;
-    lbImg.alt = it.dataset.title;
-    lbCaption.textContent = it.dataset.title || '';
+
+  // Load an image and resolve when ready (or use cache)
+  function loadImage(src) {
+    return new Promise(resolve => {
+      const img = new Image();
+      img.onload = () => resolve(src);
+      img.onerror = () => resolve(src);
+      img.src = src;
+    });
   }
+
+  // Preload the next and previous full-size images
+  function preloadAdjacent() {
+    if (items.length < 2) return;
+    const prevIdx = (idx - 1 + items.length) % items.length;
+    const nextIdx = (idx + 1) % items.length;
+    [prevIdx, nextIdx].forEach(i => {
+      const src = items[i].dataset.full || items[i].querySelector('img').src;
+      const link = new Image();
+      link.src = src;
+    });
+  }
+
+  function showSlide(animate) {
+    const it  = items[idx];
+    const src = it.dataset.full || it.querySelector('img').src;
+    const caption = it.dataset.title || '';
+
+    if (!animate) {
+      // Instant swap (used on first open)
+      lbImg.src = src;
+      lbImg.alt = caption;
+      lbCaption.textContent = caption;
+      preloadAdjacent();
+      return;
+    }
+
+    // ── Animated transition ──
+    transitioning = true;
+
+    // 1. Fade out image + caption
+    lbImg.classList.add('fading');
+    lbCaption.classList.add('fading');
+
+    // 2. After fade-out, swap src and wait for load
+    setTimeout(() => {
+      // Start loading new image
+      let spinnerTimer = setTimeout(() => {
+        lbSpinner.classList.add('visible');
+      }, SPINNER_DELAY);
+
+      // Update caption immediately (while faded out)
+      lbCaption.textContent = caption;
+      lbImg.alt = caption;
+
+      loadImage(src).then(() => {
+        clearTimeout(spinnerTimer);
+        lbSpinner.classList.remove('visible');
+
+        // 3. Set the new source and fade in
+        lbImg.src = src;
+        // Small rAF delay to ensure src swap registers before fade-in
+        requestAnimationFrame(() => {
+          lbImg.classList.remove('fading');
+          lbCaption.classList.remove('fading');
+          // Unlock after fade-in completes
+          setTimeout(() => {
+            transitioning = false;
+            preloadAdjacent();
+          }, FADE_MS);
+        });
+      });
+    }, FADE_MS);
+  }
+
   function closeLightbox() {
+    transitioning = false;
     lightbox.classList.remove('open');
     document.body.style.overflow = '';
-    lbImg.src = '';
+    lbSpinner.classList.remove('visible');
+    lbImg.classList.remove('fading');
+    lbCaption.classList.remove('fading');
+    // Delay clearing src so the close isn't jarring
+    setTimeout(() => { if (!lightbox.classList.contains('open')) lbImg.src = ''; }, 300);
   }
+
   function navigate(dir) {
+    if (transitioning) return;         // block rapid clicks
     idx = (idx + dir + items.length) % items.length;
-    showSlide();
+    showSlide(true);
   }
 
   function initLightboxClicks() {

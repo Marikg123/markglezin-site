@@ -266,6 +266,7 @@ img { display: block; max-width: 100%; }
 .lightbox.open { display: flex; }
 
 .lightbox-img-wrap {
+  position: relative;
   max-width: min(90vw, calc(100vw - 260px));
   max-height: 88vh;
   display: flex;
@@ -276,7 +277,26 @@ img { display: block; max-width: 100%; }
   max-width: 100%;
   max-height: 88vh;
   object-fit: contain;
+  opacity: 1;
+  transition: opacity 0.25s ease;
 }
+.lightbox-img-wrap img.fading { opacity: 0; }
+
+/* Subtle spinner shown while next image loads */
+.lightbox-img-wrap .lb-spinner {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 2px solid rgba(255,255,255,0.15);
+  border-top-color: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  animation: lb-spin 0.7s linear infinite;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+.lightbox-img-wrap .lb-spinner.visible { opacity: 1; }
+@keyframes lb-spin { to { transform: rotate(360deg); } }
 
 .lightbox-caption {
   color: rgba(255,255,255,0.7);
@@ -284,7 +304,9 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.05em;
   margin-top: 14px;
   text-align: center;
+  transition: opacity 0.25s ease;
 }
+.lightbox-caption.fading { opacity: 0; }
 
 .lightbox-close {
   position: fixed;
