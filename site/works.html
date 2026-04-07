@@ -6,14 +6,14 @@
   <title>Paintings by Mark Glezin — Portraits, Still Life, Landscapes, Watercolors</title>
   <meta name="description" content="Browse original figurative paintings by Mark Glezin. Portraits, still life, landscapes, and watercolors in oil on panel and canvas. Available for purchase and exhibition.">
   <meta name="keywords" content="figurative paintings, oil paintings for sale, portrait paintings, still life art, landscape paintings, watercolor art, Mark Glezin artwork">
-  <link rel="canonical" href="https://www.markglezin.com/works.html">
+  <link rel="canonical" href="https://www.markglezin.com/works">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Paintings by Mark Glezin">
   <meta property="og:description" content="Browse original figurative paintings — portraits, still life, landscapes, and watercolors.">
   <meta property="og:image" content="https://www.markglezin.com/images/hero.webp">
-  <meta property="og:url" content="https://www.markglezin.com/works.html">
+  <meta property="og:url" content="https://www.markglezin.com/works">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -36,7 +36,7 @@
     "@type": "CollectionPage",
     "name": "Paintings by Mark Glezin",
     "description": "Original figurative paintings by Mark Glezin including portraits, still life, landscapes, and watercolors.",
-    "url": "https://www.markglezin.com/works.html",
+    "url": "https://www.markglezin.com/works",
     "author": {
       "@type": "Person",
       "name": "Mark Glezin",
@@ -49,16 +49,16 @@
 
   <!-- Left Sidebar -->
   <aside class="sidebar">
-    <div class="site-title"><a href="index.html">Mark Glezin</a></div>
+    <div class="site-title"><a href="/">Mark Glezin</a></div>
     <nav class="sidebar-nav">
-      <a href="index.html">Home</a>
+      <a href="/">Home</a>
       <div class="nav-group open" id="work-group">
-        <a href="works.html" class="active">Work</a>
+        <a href="works" class="active">Work</a>
         <nav class="nav-sub" id="work-sub" aria-label="Work categories"></nav>
       </div>
       <div class="nav-gap"></div>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="about">About</a>
+      <a href="contact">Contact</a>
     </nav>
     <div class="sidebar-social">
       <a href="https://www.facebook.com/MarkGlezinART/" target="_blank" rel="noopener" aria-label="Facebook">
@@ -72,18 +72,18 @@
 
   <!-- Mobile Header -->
   <div class="mobile-header">
-    <div class="mobile-title"><a href="index.html">Mark Glezin</a></div>
+    <div class="mobile-title"><a href="/">Mark Glezin</a></div>
     <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 
   <!-- Mobile Nav Overlay -->
   <div class="mobile-nav" role="dialog" aria-label="Navigation">
     <button class="close-btn" aria-label="Close menu">×</button>
-    <a href="index.html">Home</a>
-    <a href="works.html" class="active">Work</a>
+    <a href="/">Home</a>
+    <a href="works" class="active">Work</a>
     <div class="mobile-sub" id="mobile-work-sub"></div>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="about">About</a>
+    <a href="contact">Contact</a>
   </div>
 
   <!-- Main Content -->
@@ -341,6 +341,37 @@
     if (e.key === 'ArrowLeft')  navigate(-1);
     if (e.key === 'ArrowRight') navigate(1);
   });
+
+  // ── Touch swipe for mobile ────────────────────────────────────────────────
+  let touchStartX = 0, touchStartY = 0, swiping = false;
+  const SWIPE_THRESHOLD = 40;
+
+  lightbox.addEventListener('touchstart', e => {
+    if (!lightbox.classList.contains('open')) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    swiping = true;
+  }, { passive: true });
+
+  lightbox.addEventListener('touchmove', e => {
+    if (!swiping) return;
+    // Prevent vertical scroll inside lightbox
+    const dx = Math.abs(e.touches[0].clientX - touchStartX);
+    const dy = Math.abs(e.touches[0].clientY - touchStartY);
+    if (dx > dy) e.preventDefault();
+  }, { passive: false });
+
+  lightbox.addEventListener('touchend', e => {
+    if (!swiping) return;
+    swiping = false;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = Math.abs(e.changedTouches[0].clientY - touchStartY);
+    // Only register horizontal swipes (not vertical scrolls or taps)
+    if (Math.abs(dx) > SWIPE_THRESHOLD && Math.abs(dx) > dy) {
+      if (dx < 0) navigate(1);   // swipe left → next
+      else        navigate(-1);  // swipe right → prev
+    }
+  }, { passive: true });
 
 })();
   </script>

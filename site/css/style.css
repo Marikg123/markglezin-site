@@ -496,7 +496,7 @@ img { display: block; max-width: 100%; }
   .contact-page { padding: 28px 20px 60px; }
   .form-row { grid-template-columns: 1fr; }
 
-  .lightbox-prev { left: 2px; font-size: 32px; }
-  .lightbox-next { right: 2px; font-size: 32px; }
+  .lightbox-prev,
+  .lightbox-next { display: none; }
   .lightbox-img-wrap { max-width: 96vw; }
 }
