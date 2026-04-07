@@ -66,8 +66,8 @@
         <nav class="nav-sub" id="work-sub" aria-label="Work categories"></nav>
       </div>
       <div class="nav-gap"></div>
-      <a href="about">About</a>
-      <a href="contact">Contact</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <div class="sidebar-social">
       <a href="https://www.facebook.com/MarkGlezinART/" target="_blank" rel="noopener" aria-label="Facebook">
@@ -91,8 +91,8 @@
     <a href="/" class="active">Home</a>
     <span class="nav-label">Work</span>
     <div class="mobile-sub" id="mobile-work-sub"></div>
-    <a href="about">About</a>
-    <a href="contact">Contact</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </div>
 
   <!-- Main Content -->
@@ -118,7 +118,7 @@
       cats.forEach(function(cat){
         var slug = cat.toLowerCase().replace(/\s+/g,'-');
         var a = document.createElement('a');
-        a.href = 'works#' + slug;
+        a.href = 'works.html#' + slug;
         a.textContent = cat;
         el.appendChild(a);
       });
