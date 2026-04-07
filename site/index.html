@@ -58,16 +58,16 @@
 
   <!-- Left Sidebar -->
   <aside class="sidebar">
-    <div class="site-title"><a href="index.html">Mark Glezin</a></div>
+    <div class="site-title"><a href="/">Mark Glezin</a></div>
     <nav class="sidebar-nav">
-      <a href="index.html" class="active">Home</a>
+      <a href="/" class="active">Home</a>
       <div class="nav-group" id="work-group">
-        <a href="works.html">Work</a>
+        <span class="nav-label">Work</span>
         <nav class="nav-sub" id="work-sub" aria-label="Work categories"></nav>
       </div>
       <div class="nav-gap"></div>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="about">About</a>
+      <a href="contact">Contact</a>
     </nav>
     <div class="sidebar-social">
       <a href="https://www.facebook.com/MarkGlezinART/" target="_blank" rel="noopener" aria-label="Facebook">
@@ -81,18 +81,18 @@
 
   <!-- Mobile Header (shown only on small screens) -->
   <div class="mobile-header">
-    <div class="mobile-title"><a href="index.html">Mark Glezin</a></div>
+    <div class="mobile-title"><a href="/">Mark Glezin</a></div>
     <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 
   <!-- Mobile Nav Overlay -->
   <div class="mobile-nav" role="dialog" aria-label="Navigation">
     <button class="close-btn" aria-label="Close menu">×</button>
-    <a href="index.html" class="active">Home</a>
-    <a href="works.html">Work</a>
+    <a href="/" class="active">Home</a>
+    <span class="nav-label">Work</span>
     <div class="mobile-sub" id="mobile-work-sub"></div>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="about">About</a>
+    <a href="contact">Contact</a>
   </div>
 
   <!-- Main Content -->
@@ -118,7 +118,7 @@
       cats.forEach(function(cat){
         var slug = cat.toLowerCase().replace(/\s+/g,'-');
         var a = document.createElement('a');
-        a.href = 'works.html#' + slug;
+        a.href = 'works#' + slug;
         a.textContent = cat;
         el.appendChild(a);
       });
