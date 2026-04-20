@@ -99,7 +99,8 @@
     <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
     <div class="lightbox-img-wrap">
       <div class="lb-spinner" id="lb-spinner"></div>
-      <img id="lb-img" src="" alt="">
+      <img id="lb-img-a" class="lb-img lb-active" src="" alt="">
+      <img id="lb-img-b" class="lb-img" src="" alt="">
     </div>
     <div class="lightbox-caption" id="lb-caption"></div>
     <button class="lightbox-next" aria-label="Next">&#8250;</button>
@@ -214,96 +215,104 @@
 
   // ── Lightbox ─────────────────────────────────────────────────────────────
   const lightbox  = document.getElementById('lightbox');
-  const lbImg     = document.getElementById('lb-img');
+  const lbImgA    = document.getElementById('lb-img-a');
+  const lbImgB    = document.getElementById('lb-img-b');
   const lbCaption = document.getElementById('lb-caption');
   const lbSpinner = document.getElementById('lb-spinner');
   let items = [], idx = 0;
-  let transitioning = false;          // blocks rapid clicks
-  const FADE_MS = 250;                // matches CSS transition duration
-  const SPINNER_DELAY = 300;          // show spinner only if load > 300ms
+  let transitioning = false;
+  const FADE_MS     = 300;   // matches CSS transition duration
+  const SPINNER_DELAY = 400; // show spinner only if load takes > 400ms
+
+  // activeImg is the currently visible slot; inactiveImg is the hidden one
+  let activeImg   = lbImgA;
+  let inactiveImg = lbImgB;
 
   function openLightbox(list, i) {
     items = list; idx = i;
-    // Show immediately (no fade-in on first open)
-    lbImg.classList.remove('fading');
-    lbCaption.classList.remove('fading');
     showSlide(false);
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 
-  // Load an image and resolve when ready (or use cache)
+  // Preload into browser cache via off-screen Image object
   function loadImage(src) {
     return new Promise(resolve => {
       const img = new Image();
-      img.onload = () => resolve(src);
+      img.onload  = () => resolve(src);
       img.onerror = () => resolve(src);
       img.src = src;
     });
   }
 
-  // Preload the next and previous full-size images
+  // Preload neighbours so they're cache-warm before the user navigates
   function preloadAdjacent() {
     if (items.length < 2) return;
-    const prevIdx = (idx - 1 + items.length) % items.length;
-    const nextIdx = (idx + 1) % items.length;
-    [prevIdx, nextIdx].forEach(i => {
-      const src = items[i].dataset.full || items[i].querySelector('img').src;
-      const link = new Image();
-      link.src = src;
+    [-1, 1].forEach(d => {
+      const src = items[(idx + d + items.length) % items.length].dataset.full
+                  || items[(idx + d + items.length) % items.length].querySelector('img').src;
+      new Image().src = src;
     });
   }
 
   function showSlide(animate) {
-    const it  = items[idx];
-    const src = it.dataset.full || it.querySelector('img').src;
+    const it      = items[idx];
+    const src     = it.dataset.full || it.querySelector('img').src;
     const caption = it.dataset.title || '';
 
     if (!animate) {
-      // Instant swap (used on first open)
-      lbImg.src = src;
-      lbImg.alt = caption;
+      // First open — set both slots to same src so no size jump on first nav
+      lbImgA.src = lbImgB.src = src;
+      lbImgA.alt = lbImgB.alt = caption;
+      lbImgA.classList.add('lb-active');
+      lbImgB.classList.remove('lb-active');
+      activeImg   = lbImgA;
+      inactiveImg = lbImgB;
       lbCaption.textContent = caption;
       preloadAdjacent();
       return;
     }
 
-    // ── Animated transition ──
+    // ── Cross-fade transition ──────────────────────────────────────────────
+    // Strategy: load new image into the hidden slot, then swap visibility
+    // simultaneously — the old image stays sharp until the new one is ready.
     transitioning = true;
 
-    // 1. Fade out image + caption
-    lbImg.classList.add('fading');
-    lbCaption.classList.add('fading');
+    let spinnerTimer = setTimeout(() => lbSpinner.classList.add('visible'), SPINNER_DELAY);
 
-    // 2. After fade-out, swap src and wait for load
-    setTimeout(() => {
-      // Start loading new image
-      let spinnerTimer = setTimeout(() => {
-        lbSpinner.classList.add('visible');
-      }, SPINNER_DELAY);
+    // Start loading into the inactive slot right away
+    inactiveImg.src = src;
+    inactiveImg.alt = caption;
 
-      // Update caption immediately (while faded out)
-      lbCaption.textContent = caption;
-      lbImg.alt = caption;
-
-      loadImage(src).then(() => {
+    // Wait for image to be in cache, then decode so it's paint-ready
+    loadImage(src)
+      .then(() => inactiveImg.decode ? inactiveImg.decode().catch(() => {}) : Promise.resolve())
+      .then(() => {
         clearTimeout(spinnerTimer);
         lbSpinner.classList.remove('visible');
 
-        // 3. Set the new source and fade in
-        lbImg.src = src;
-        // Small rAF delay to ensure src swap registers before fade-in
+        // Swap captions (fade out → update → fade in)
+        lbCaption.style.opacity = '0';
+
+        // Cross-fade the two image slots simultaneously
+        activeImg.classList.remove('lb-active');
+        inactiveImg.classList.add('lb-active');
+
+        // Swap roles for next navigation
+        [activeImg, inactiveImg] = [inactiveImg, activeImg];
+
+        // Fade caption back in with new text
         requestAnimationFrame(() => {
-          lbImg.classList.remove('fading');
-          lbCaption.classList.remove('fading');
-          // Unlock after fade-in completes
-          setTimeout(() => {
-            transitioning = false;
-            preloadAdjacent();
-          }, FADE_MS);
+          lbCaption.textContent = caption;
+          lbCaption.style.opacity = '';
         });
+
+        // Unlock after transition completes
+        setTimeout(() => {
+          transitioning = false;
+          preloadAdjacent();
+        }, FADE_MS);
       });
-    }, FADE_MS);
   }
 
   function closeLightbox() {
@@ -311,10 +320,12 @@
     lightbox.classList.remove('open');
     document.body.style.overflow = '';
     lbSpinner.classList.remove('visible');
-    lbImg.classList.remove('fading');
-    lbCaption.classList.remove('fading');
-    // Delay clearing src so the close isn't jarring
-    setTimeout(() => { if (!lightbox.classList.contains('open')) lbImg.src = ''; }, 300);
+    lbCaption.style.opacity = '';
+    setTimeout(() => {
+      if (!lightbox.classList.contains('open')) {
+        lbImgA.src = lbImgB.src = '';
+      }
+    }, 300);
   }
 
   function navigate(dir) {
