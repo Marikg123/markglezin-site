@@ -8,8 +8,8 @@ window.GALLERY = {
   ],
   "paintings": [
     {
-      "file": "images/paintings/1 Portraits/01 -self-portait-51x40cm.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/01 -self-portait-51x40cm.webp",
+      "file": "images/paintings/1 Portraits/01-oil-on-panel-51x40.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/01-oil-on-panel-51x40.webp",
       "title": "Self Portait 51x40cm",
       "category": "Portraits",
       "sold": false,
@@ -30,8 +30,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/03-michael-80x65cm-23000.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/03-michael-80x65cm-23000.webp",
+      "file": "images/paintings/1 Portraits/03-oil-on-canvas-80x65.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/03-oil-on-canvas-80x65.webp",
       "title": "Michael 80x65cm 23000",
       "category": "Portraits",
       "sold": false,
@@ -41,8 +41,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/04-.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/04-.webp",
+      "file": "images/paintings/1 Portraits/04-oil-on-canvas-110x110-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/04-oil-on-canvas-110x110-SOLD.webp",
       "title": "Untitled",
       "category": "Portraits",
       "sold": false,
@@ -52,9 +52,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/05-75x50-oil-on-canvas-24000.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/05-75x50-oil-on-canvas-24000.webp",
-      "title": "75x50 Oil on Canvas 24000",
+      "file": "images/paintings/1 Portraits/05-oil-on-canvas-75x50.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/05-oil-on-canvas-75x50.webp",
+      "title": "Oil on Canvas, 75×50cm",
       "category": "Portraits",
       "sold": false,
       "w": 1198,
@@ -63,9 +63,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/06-oil-on-panel-44x46-25000.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/06-oil-on-panel-44x46-25000.webp",
-      "title": "Oil on Panel 44x46 25000",
+      "file": "images/paintings/1 Portraits/06-oil-on-panel-44x46.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/06-oil-on-panel-44x46.webp",
+      "title": "Oil on Panel, 44×46cm",
       "category": "Portraits",
       "sold": false,
       "w": 1800,
@@ -74,8 +74,8 @@ window.GALLERY = {
       "th": 572
     },
     {
-      "file": "images/paintings/1 Portraits/07-self-portrait-in-the-studiox70cm.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/07-self-portrait-in-the-studiox70cm.webp",
+      "file": "images/paintings/1 Portraits/07-oil-on-panel-100x70.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/07-oil-on-panel-100x70.webp",
       "title": "Self Portrait in the Studiox70cm",
       "category": "Portraits",
       "sold": false,
@@ -85,8 +85,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/08-dsc-edited.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/08-dsc-edited.webp",
+      "file": "images/paintings/1 Portraits/08-oil-on-panel-46x44.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/08-oil-on-panel-46x44.webp",
       "title": "Dsc Edited",
       "category": "Portraits",
       "sold": false,
@@ -107,9 +107,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/10-oil-on-canvas-150x110-35000.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/10-oil-on-canvas-150x110-35000.webp",
-      "title": "Oil on Canvas 150x110 35000",
+      "file": "images/paintings/1 Portraits/10-oil-on-canvas-150x110.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/10-oil-on-canvas-150x110.webp",
+      "title": "Oil on Canvas, 150×110cm",
       "category": "Portraits",
       "sold": false,
       "w": 1288,
@@ -118,8 +118,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/11-oil-on-panel-x.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/11-oil-on-panel-x.webp",
+      "file": "images/paintings/1 Portraits/11-oil-on-canvas-150x110.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/11-oil-on-canvas-150x110.webp",
       "title": "Oil on Panel X",
       "category": "Portraits",
       "sold": false,
@@ -129,8 +129,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/12 alla prima oil on canvas.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/12 alla prima oil on canvas.webp",
+      "file": "images/paintings/1 Portraits/12-oil-on-canvas-45x33.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/12-oil-on-canvas-45x33.webp",
       "title": "Alla Prima Oil on Canvas",
       "category": "Portraits",
       "sold": false,
@@ -140,8 +140,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/13 alla prima oil on canvas.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/13 alla prima oil on canvas.webp",
+      "file": "images/paintings/1 Portraits/13-oil-on-canvas-45x34.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/13-oil-on-canvas-45x34.webp",
       "title": "Alla Prima Oil on Canvas",
       "category": "Portraits",
       "sold": false,
@@ -151,8 +151,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/14 alla prima oil on canvas.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/14 alla prima oil on canvas.webp",
+      "file": "images/paintings/1 Portraits/14-oil-on-canvas-45x35.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/14-oil-on-canvas-45x35.webp",
       "title": "Alla Prima Oil on Canvas",
       "category": "Portraits",
       "sold": false,
@@ -162,8 +162,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/15 alla prima oil on canvas.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/15 alla prima oil on canvas.webp",
+      "file": "images/paintings/1 Portraits/15-oil-on-canvas-45x36.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/15-oil-on-canvas-45x36.webp",
       "title": "Alla Prima Oil on Canvas",
       "category": "Portraits",
       "sold": false,
@@ -173,8 +173,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/16 alla prima oil on canvas.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/16 alla prima oil on canvas.webp",
+      "file": "images/paintings/1 Portraits/16-oil-on-canvas-45x37.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/16-oil-on-canvas-45x37.webp",
       "title": "Alla Prima Oil on Canvas",
       "category": "Portraits",
       "sold": false,
@@ -184,8 +184,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/17 pencil and charcoal drawing.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/17 pencil and charcoal drawing.webp",
+      "file": "images/paintings/1 Portraits/17-pencil-and-charcoal-on-paper-50x44.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/17-pencil-and-charcoal-on-paper-50x44.webp",
       "title": "Pencil and Charcoal Drawing",
       "category": "Portraits",
       "sold": false,
@@ -195,8 +195,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/18-sold-freshpaint-2019-12.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/18-sold-freshpaint-2019-12.webp",
+      "file": "images/paintings/1 Portraits/18-oil-on-panel-78x68-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/18-oil-on-panel-78x68-SOLD.webp",
       "title": "Fresh Paint 2019 12",
       "category": "Portraits",
       "sold": true,
@@ -206,8 +206,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/19-sold-freshpaint-11.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/19-sold-freshpaint-11.webp",
+      "file": "images/paintings/1 Portraits/19-oil-on-panel-78x69-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/19-oil-on-panel-78x69-SOLD.webp",
       "title": "Fresh Paint 11",
       "category": "Portraits",
       "sold": true,
@@ -217,8 +217,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/19-sold-freshpaint-2019-3.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/19-sold-freshpaint-2019-3.webp",
+      "file": "images/paintings/1 Portraits/19b-oil-on-panel-78x70-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/19b-oil-on-panel-78x70-SOLD.webp",
       "title": "Fresh Paint 2019 3",
       "category": "Portraits",
       "sold": true,
@@ -228,8 +228,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/20-sold-freshpaint-12.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/20-sold-freshpaint-12.webp",
+      "file": "images/paintings/1 Portraits/20-oil-on-panel-78x71-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/20-oil-on-panel-78x71-SOLD.webp",
       "title": "Fresh Paint 12",
       "category": "Portraits",
       "sold": true,
@@ -239,8 +239,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/20-sold-freshpaint-2019-4.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/20-sold-freshpaint-2019-4.webp",
+      "file": "images/paintings/1 Portraits/20b-oil-on-panel-78x72-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/20b-oil-on-panel-78x72-SOLD.webp",
       "title": "Fresh Paint 2019 4",
       "category": "Portraits",
       "sold": true,
@@ -250,8 +250,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/21-sold-freshpaint-3.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/21-sold-freshpaint-3.webp",
+      "file": "images/paintings/1 Portraits/21-oil-on-panel-78x73-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/21-oil-on-panel-78x73-SOLD.webp",
       "title": "Fresh Paint 3",
       "category": "Portraits",
       "sold": true,
@@ -261,8 +261,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/22-sold-freshpaint-2019-9.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/22-sold-freshpaint-2019-9.webp",
+      "file": "images/paintings/1 Portraits/22-oil-on-panel-78x74-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/22-oil-on-panel-78x74-SOLD.webp",
       "title": "Fresh Paint 2019 9",
       "category": "Portraits",
       "sold": true,
@@ -272,8 +272,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/23-sold-freshpaint-4.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/23-sold-freshpaint-4.webp",
+      "file": "images/paintings/1 Portraits/23-oil-on-panel-78x75-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/23-oil-on-panel-78x75-SOLD.webp",
       "title": "Fresh Paint 4",
       "category": "Portraits",
       "sold": true,
@@ -283,8 +283,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/24 SOLD Freshpaint 2019 13.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/24 SOLD Freshpaint 2019 13.webp",
+      "file": "images/paintings/1 Portraits/24-oil-on-panel-78x76-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/24-oil-on-panel-78x76-SOLD.webp",
       "title": "Fresh Paint 13",
       "category": "Portraits",
       "sold": true,
@@ -294,8 +294,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/25-sold-freshpaint-2019-6.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/25-sold-freshpaint-2019-6.webp",
+      "file": "images/paintings/1 Portraits/25-oil-on-panel-78x77-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/25-oil-on-panel-78x77-SOLD.webp",
       "title": "Fresh Paint 2019 6",
       "category": "Portraits",
       "sold": true,
@@ -305,14 +305,25 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/1 Portraits/26 SOLD freshpaint 2019 1.webp",
-      "thumb": "images/paintings/1 Portraits/thumb/26 SOLD freshpaint 2019 1.webp",
+      "file": "images/paintings/1 Portraits/26-oil-on-panel-78x78-SOLD.webp",
+      "thumb": "images/paintings/1 Portraits/thumb/26-oil-on-panel-78x78-SOLD.webp",
       "title": "Fresh Paint 1",
       "category": "Portraits",
       "sold": true,
       "w": 1556,
       "h": 1800,
       "tw": 518,
+      "th": 600
+    },
+    {
+      "file": "images/paintings/2 Still life/00-oil-on-panel-48x40.webp",
+      "thumb": "images/paintings/2 Still life/thumb/00-oil-on-panel-48x40.webp",
+      "title": "Oil on Panel, 48×40cm",
+      "category": "Still life",
+      "sold": false,
+      "w": 1514,
+      "h": 1800,
+      "tw": 504,
       "th": 600
     },
     {
@@ -327,9 +338,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/02-oil-on-panel-48x44-12000.webp",
-      "thumb": "images/paintings/2 Still life/thumb/02-oil-on-panel-48x44-12000.webp",
-      "title": "Oil on Panel 48x44 12000",
+      "file": "images/paintings/2 Still life/02-oil-on-panel-48x44.webp",
+      "thumb": "images/paintings/2 Still life/thumb/02-oil-on-panel-48x44.webp",
+      "title": "Oil on Panel, 48×44cm",
       "category": "Still life",
       "sold": false,
       "w": 1644,
@@ -338,9 +349,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/03-sold-keren-bar-gil-oil-on-panel-46x44-7000-1.webp",
-      "thumb": "images/paintings/2 Still life/thumb/03-sold-keren-bar-gil-oil-on-panel-46x44-7000-1.webp",
-      "title": "Keren Bar Gil Oil on Panel 46x44 7000 1",
+      "file": "images/paintings/2 Still life/03-oil-on-panel-46x44-SOLD.webp",
+      "thumb": "images/paintings/2 Still life/thumb/03-oil-on-panel-46x44-SOLD.webp",
+      "title": "Oil on Panel, 46×44cm",
       "category": "Still life",
       "sold": true,
       "w": 1705,
@@ -360,9 +371,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/05-sold-keren-bar-gil-oil-on-panel-52x41.webp",
-      "thumb": "images/paintings/2 Still life/thumb/05-sold-keren-bar-gil-oil-on-panel-52x41.webp",
-      "title": "Keren Bar Gil Oil on Panel 52x41",
+      "file": "images/paintings/2 Still life/05-oil-on-panel-52x41-SOLD.webp",
+      "thumb": "images/paintings/2 Still life/thumb/05-oil-on-panel-52x41-SOLD.webp",
+      "title": "Oil on Panel, 52×41cm",
       "category": "Still life",
       "sold": true,
       "w": 1394,
@@ -382,8 +393,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/07 Oil on panel 44x46cm 12000.webp",
-      "thumb": "images/paintings/2 Still life/thumb/07 Oil on panel 44x46cm 12000.webp",
+      "file": "images/paintings/2 Still life/07-oil-on-panel-44x46.webp",
+      "thumb": "images/paintings/2 Still life/thumb/07-oil-on-panel-44x46.webp",
       "title": "Oil on Panel, 44×46cm",
       "category": "Still life",
       "sold": false,
@@ -393,8 +404,8 @@ window.GALLERY = {
       "th": 571
     },
     {
-      "file": "images/paintings/2 Still life/08 Oil on panel 51x40cm 12000.webp",
-      "thumb": "images/paintings/2 Still life/thumb/08 Oil on panel 51x40cm 12000.webp",
+      "file": "images/paintings/2 Still life/08-oil-on-panel-51x40.webp",
+      "thumb": "images/paintings/2 Still life/thumb/08-oil-on-panel-51x40.webp",
       "title": "Oil on Panel, 51×40cm",
       "category": "Still life",
       "sold": false,
@@ -404,8 +415,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/09-sold-dan-gallery-oil-on-panel-70x.webp",
-      "thumb": "images/paintings/2 Still life/thumb/09-sold-dan-gallery-oil-on-panel-70x.webp",
+      "file": "images/paintings/2 Still life/09-oil-on-panel-70x100-SOLD.webp",
+      "thumb": "images/paintings/2 Still life/thumb/09-oil-on-panel-70x100-SOLD.webp",
       "title": "Dan Gallery Oil on Panel 70x",
       "category": "Still life",
       "sold": true,
@@ -415,9 +426,9 @@ window.GALLERY = {
       "th": 417
     },
     {
-      "file": "images/paintings/2 Still life/10-oil-on-panel-60x80-22000.webp",
-      "thumb": "images/paintings/2 Still life/thumb/10-oil-on-panel-60x80-22000.webp",
-      "title": "Oil on Panel 60x80 22000",
+      "file": "images/paintings/2 Still life/10-oil-on-panel-60x80.webp",
+      "thumb": "images/paintings/2 Still life/thumb/10-oil-on-panel-60x80.webp",
+      "title": "Oil on Panel, 60×80cm",
       "category": "Still life",
       "sold": false,
       "w": 1800,
@@ -426,8 +437,8 @@ window.GALLERY = {
       "th": 446
     },
     {
-      "file": "images/paintings/2 Still life/11 oil on panel 46x46, 12000.webp",
-      "thumb": "images/paintings/2 Still life/thumb/11 oil on panel 46x46, 12000.webp",
+      "file": "images/paintings/2 Still life/11-oil-on-panel-46x46.webp",
+      "thumb": "images/paintings/2 Still life/thumb/11-oil-on-panel-46x46.webp",
       "title": "Oil on Panel, 46×46cm",
       "category": "Still life",
       "sold": false,
@@ -437,8 +448,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/12 Oil on panel 41x52, 12000.webp",
-      "thumb": "images/paintings/2 Still life/thumb/12 Oil on panel 41x52, 12000.webp",
+      "file": "images/paintings/2 Still life/12-oil-on-panel-41x52.webp",
+      "thumb": "images/paintings/2 Still life/thumb/12-oil-on-panel-41x52.webp",
       "title": "Oil on Panel, 41×52cm",
       "category": "Still life",
       "sold": false,
@@ -448,8 +459,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/13 SOLD (Keren bar-gil) Oil on panel 45x80, 13000.webp",
-      "thumb": "images/paintings/2 Still life/thumb/13 SOLD (Keren bar-gil) Oil on panel 45x80, 13000.webp",
+      "file": "images/paintings/2 Still life/13-oil-on-panel-45x80-SOLD.webp",
+      "thumb": "images/paintings/2 Still life/thumb/13-oil-on-panel-45x80-SOLD.webp",
       "title": "Oil on Panel, 45×80cm",
       "category": "Still life",
       "sold": true,
@@ -459,8 +470,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/14 oil on panel 30X40, 4000.webp",
-      "thumb": "images/paintings/2 Still life/thumb/14 oil on panel 30X40, 4000.webp",
+      "file": "images/paintings/2 Still life/14-oil-on-panel-30x40.webp",
+      "thumb": "images/paintings/2 Still life/thumb/14-oil-on-panel-30x40.webp",
       "title": "Oil on Panel, 30×40cm",
       "category": "Still life",
       "sold": false,
@@ -470,8 +481,8 @@ window.GALLERY = {
       "th": 450
     },
     {
-      "file": "images/paintings/2 Still life/15 SOLD (Keren bar-gil) Oil on panel, 44x46,,, 8500.webp",
-      "thumb": "images/paintings/2 Still life/thumb/15 SOLD (Keren bar-gil) Oil on panel, 44x46,,, 8500.webp",
+      "file": "images/paintings/2 Still life/15-oil-on-panel-44x46-SOLD.webp",
+      "thumb": "images/paintings/2 Still life/thumb/15-oil-on-panel-44x46-SOLD.webp",
       "title": "Oil on Panel, 44×46cm",
       "category": "Still life",
       "sold": true,
@@ -481,8 +492,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/16 SOLD (Keren bar-gil) oil on panel 36x24,, 4500.webp",
-      "thumb": "images/paintings/2 Still life/thumb/16 SOLD (Keren bar-gil) oil on panel 36x24,, 4500.webp",
+      "file": "images/paintings/2 Still life/16-oil-on-panel-36x24-SOLD.webp",
+      "thumb": "images/paintings/2 Still life/thumb/16-oil-on-panel-36x24-SOLD.webp",
       "title": "Oil on Panel, 36×24cm",
       "category": "Still life",
       "sold": true,
@@ -492,8 +503,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/17 Oil on panel 48x44, 12000.webp",
-      "thumb": "images/paintings/2 Still life/thumb/17 Oil on panel 48x44, 12000.webp",
+      "file": "images/paintings/2 Still life/17-oil-on-panel-48x44.webp",
+      "thumb": "images/paintings/2 Still life/thumb/17-oil-on-panel-48x44.webp",
       "title": "Oil on Panel, 48×44cm",
       "category": "Still life",
       "sold": false,
@@ -503,9 +514,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/18-sold-oil-on-panel-48x44-10000.webp",
-      "thumb": "images/paintings/2 Still life/thumb/18-sold-oil-on-panel-48x44-10000.webp",
-      "title": "Oil on Panel 48x44 10000",
+      "file": "images/paintings/2 Still life/18-oil-on-panel-48x44-SOLD.webp",
+      "thumb": "images/paintings/2 Still life/thumb/18-oil-on-panel-48x44-SOLD.webp",
+      "title": "Oil on Panel, 48×44cm",
       "category": "Still life",
       "sold": true,
       "w": 1646,
@@ -514,9 +525,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/19-sold-oli-on-panel-41x52-framed.webp",
-      "thumb": "images/paintings/2 Still life/thumb/19-sold-oli-on-panel-41x52-framed.webp",
-      "title": "Oli on Panel 41x52 Framed",
+      "file": "images/paintings/2 Still life/19-oil-on-panel-41x52-SOLD.webp",
+      "thumb": "images/paintings/2 Still life/thumb/19-oil-on-panel-41x52-SOLD.webp",
+      "title": "Oil on Panel, 41×52cm",
       "category": "Still life",
       "sold": true,
       "w": 1417,
@@ -525,9 +536,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/2 Still life/20-oil-on-panel-21-5x34.webp",
-      "thumb": "images/paintings/2 Still life/thumb/20-oil-on-panel-21-5x34.webp",
-      "title": "Oil on Panel 21 5x34",
+      "file": "images/paintings/2 Still life/20-oil-on-panel-21.5x34.webp",
+      "thumb": "images/paintings/2 Still life/thumb/20-oil-on-panel-21.5x34.webp",
+      "title": "Oil on Panel, 21.5×34cm",
       "category": "Still life",
       "sold": false,
       "w": 1800,
@@ -536,9 +547,9 @@ window.GALLERY = {
       "th": 380
     },
     {
-      "file": "images/paintings/3 Landscape/01-a-gift-to-my-parents-oil-on-panel-70x100.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/01-a-gift-to-my-parents-oil-on-panel-70x100.webp",
-      "title": "A Gift to My Parents Oil on Panel 70x100",
+      "file": "images/paintings/3 Landscape/01-oil-on-panel-70x100.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/01-oil-on-panel-70x100.webp",
+      "title": "Oil on Panel, 70×100cm",
       "category": "Landscape",
       "sold": false,
       "w": 1800,
@@ -558,8 +569,8 @@ window.GALLERY = {
       "th": 420
     },
     {
-      "file": "images/paintings/3 Landscape/03 oil on panel 2500.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/03 oil on panel 2500.webp",
+      "file": "images/paintings/3 Landscape/03-oil-on-panel-30x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/03-oil-on-panel-30x30.webp",
       "title": "Oil on Panel",
       "category": "Landscape",
       "sold": false,
@@ -569,8 +580,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/04 DSC05965.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/04 DSC05965.webp",
+      "file": "images/paintings/3 Landscape/04-oil-on-paper-24x18.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/04-oil-on-paper-24x18.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -580,8 +591,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/05 oil on panel 2000.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/05 oil on panel 2000.webp",
+      "file": "images/paintings/3 Landscape/05-oil-on-panel-29x20.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/05-oil-on-panel-29x20.webp",
       "title": "Oil on Panel",
       "category": "Landscape",
       "sold": false,
@@ -591,19 +602,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/06 DSC05966.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/06 DSC05966.webp",
-      "title": "Untitled",
-      "category": "Landscape",
-      "sold": false,
-      "w": 1361,
-      "h": 1800,
-      "tw": 453,
-      "th": 600
-    },
-    {
-      "file": "images/paintings/3 Landscape/07 DSC05964.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/07 DSC05964.webp",
+      "file": "images/paintings/3 Landscape/07-oil-on-paper-29x19.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/07-oil-on-paper-29x19.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -613,8 +613,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/08 DSC06197.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/08 DSC06197.webp",
+      "file": "images/paintings/3 Landscape/08-oil-on-panel-16x12.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/08-oil-on-panel-16x12.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -624,8 +624,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/09 DSC06198.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/09 DSC06198.webp",
+      "file": "images/paintings/3 Landscape/09-oil-on-panel-16x12.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/09-oil-on-panel-16x12.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -635,8 +635,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/10 DSC06209-3.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/10 DSC06209-3.webp",
+      "file": "images/paintings/3 Landscape/10-oil-on-panel-16x12.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/10-oil-on-panel-16x12.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -646,8 +646,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/11 DSC06199.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/11 DSC06199.webp",
+      "file": "images/paintings/3 Landscape/11-oil-on-panel-16x12.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/11-oil-on-panel-16x12.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -657,8 +657,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/12 cDSC06200.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/12 cDSC06200.webp",
+      "file": "images/paintings/3 Landscape/12-oil-on-panel-16x12.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/12-oil-on-panel-16x12.webp",
       "title": "Cdsc06200",
       "category": "Landscape",
       "sold": false,
@@ -668,8 +668,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/13 DSC06201.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/13 DSC06201.webp",
+      "file": "images/paintings/3 Landscape/13-oil-on-panel-16x12.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/13-oil-on-panel-16x12.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -679,8 +679,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/14 DSC06202.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/14 DSC06202.webp",
+      "file": "images/paintings/3 Landscape/14-oil-on-panel-12x16.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/14-oil-on-panel-12x16.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -690,8 +690,8 @@ window.GALLERY = {
       "th": 448
     },
     {
-      "file": "images/paintings/3 Landscape/15 DSC06203.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/15 DSC06203.webp",
+      "file": "images/paintings/3 Landscape/15-oil-on-panel-16x12.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/15-oil-on-panel-16x12.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -701,8 +701,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/16 DSC06204.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/16 DSC06204.webp",
+      "file": "images/paintings/3 Landscape/16-oil-on-panel-12x16.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/16-oil-on-panel-12x16.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -712,8 +712,8 @@ window.GALLERY = {
       "th": 446
     },
     {
-      "file": "images/paintings/3 Landscape/17 DSC06205-2.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/17 DSC06205-2.webp",
+      "file": "images/paintings/3 Landscape/17-oil-on-panel-16x12.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/17-oil-on-panel-16x12.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -723,8 +723,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/18 DSC06249-2.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/18 DSC06249-2.webp",
+      "file": "images/paintings/3 Landscape/18-oil-on-panel-15x16.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/18-oil-on-panel-15x16.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -734,8 +734,8 @@ window.GALLERY = {
       "th": 533
     },
     {
-      "file": "images/paintings/3 Landscape/19 DSC06232.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/19 DSC06232.webp",
+      "file": "images/paintings/3 Landscape/19-oil-on-panel-11x15.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/19-oil-on-panel-11x15.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -745,8 +745,8 @@ window.GALLERY = {
       "th": 416
     },
     {
-      "file": "images/paintings/3 Landscape/20 DSC06233.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/20 DSC06233.webp",
+      "file": "images/paintings/3 Landscape/20-oil-on-paper-11x15.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/20-oil-on-paper-11x15.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -756,8 +756,8 @@ window.GALLERY = {
       "th": 437
     },
     {
-      "file": "images/paintings/3 Landscape/21 DSC06234.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/21 DSC06234.webp",
+      "file": "images/paintings/3 Landscape/21-oil-on-paper-11x15.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/21-oil-on-paper-11x15.webp",
       "title": "Untitled",
       "category": "Landscape",
       "sold": false,
@@ -767,8 +767,8 @@ window.GALLERY = {
       "th": 452
     },
     {
-      "file": "images/paintings/3 Landscape/22 Pastel on paper 20.5x30,,,, 1800.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/22 Pastel on paper 20.5x30,,,, 1800.webp",
+      "file": "images/paintings/3 Landscape/22-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/22-pastel-on-paper-20.5x30.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -778,8 +778,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/23 Pastel on paper 20.5x30, 1800.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/23 Pastel on paper 20.5x30, 1800.webp",
+      "file": "images/paintings/3 Landscape/23-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/23-pastel-on-paper-20.5x30.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -789,8 +789,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/24 DSC02767 Edited.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/24 DSC02767 Edited.webp",
+      "file": "images/paintings/3 Landscape/24-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/24-pastel-on-paper-20.5x30.webp",
       "title": "Edited",
       "category": "Landscape",
       "sold": false,
@@ -800,8 +800,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/25 DSC02766 Edited.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/25 DSC02766 Edited.webp",
+      "file": "images/paintings/3 Landscape/25-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/25-pastel-on-paper-20.5x30.webp",
       "title": "Edited",
       "category": "Landscape",
       "sold": false,
@@ -811,9 +811,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/26 Pastel on paper 20.5x30, 1800 2.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/26 Pastel on paper 20.5x30, 1800 2.webp",
-      "title": "Pastel on Paper, 20.5×30cm 2",
+      "file": "images/paintings/3 Landscape/26-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/26-pastel-on-paper-20.5x30.webp",
+      "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
       "w": 1350,
@@ -822,8 +822,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/27 Pastel on paper 20.5x30.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/27 Pastel on paper 20.5x30.webp",
+      "file": "images/paintings/3 Landscape/27-pastel-on-paper-20.5x30-SOLD.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/27-pastel-on-paper-20.5x30-SOLD.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -833,8 +833,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/28 Pastel on paper 20.5x30.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/28 Pastel on paper 20.5x30.webp",
+      "file": "images/paintings/3 Landscape/28-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/28-pastel-on-paper-20.5x30.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -844,8 +844,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/29 Pastel on paper 20.5x30.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/29 Pastel on paper 20.5x30.webp",
+      "file": "images/paintings/3 Landscape/29-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/29-pastel-on-paper-20.5x30.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -855,8 +855,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/30 Pastel on paper 20.5x30.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/30 Pastel on paper 20.5x30.webp",
+      "file": "images/paintings/3 Landscape/30-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/30-pastel-on-paper-20.5x30.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -866,8 +866,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/31 Pastel on paper 20.5x30.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/31 Pastel on paper 20.5x30.webp",
+      "file": "images/paintings/3 Landscape/31-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/31-pastel-on-paper-20.5x30.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -877,8 +877,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/32 Pastel on paper 20.5x30.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/32 Pastel on paper 20.5x30.webp",
+      "file": "images/paintings/3 Landscape/32-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/32-pastel-on-paper-20.5x30.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -888,8 +888,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/33 Pastel on paper 20.5x30.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/33 Pastel on paper 20.5x30.webp",
+      "file": "images/paintings/3 Landscape/33-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/33-pastel-on-paper-20.5x30.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -899,8 +899,8 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/34 Pastel on paper 20.5x30.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/34 Pastel on paper 20.5x30.webp",
+      "file": "images/paintings/3 Landscape/34-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/34-pastel-on-paper-20.5x30.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -910,9 +910,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/3 Landscape/35 Pastel on panel 38.5x49.5, framed with glass,, 5000.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/35 Pastel on panel 38.5x49.5, framed with glass,, 5000.webp",
-      "title": "Pastel on Panel, 38.5×49.5cm, Framed With Glass",
+      "file": "images/paintings/3 Landscape/35-pastel-on-panel-38.5x49.5.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/35-pastel-on-panel-38.5x49.5.webp",
+      "title": "Pastel on Panel, 38.5×49.5cm",
       "category": "Landscape",
       "sold": false,
       "w": 1800,
@@ -921,8 +921,8 @@ window.GALLERY = {
       "th": 484
     },
     {
-      "file": "images/paintings/3 Landscape/36 Pastel on paper 20.5x30,,,,,,, 1800.webp",
-      "thumb": "images/paintings/3 Landscape/thumb/36 Pastel on paper 20.5x30,,,,,,, 1800.webp",
+      "file": "images/paintings/3 Landscape/36-pastel-on-paper-20.5x30.webp",
+      "thumb": "images/paintings/3 Landscape/thumb/36-pastel-on-paper-20.5x30.webp",
       "title": "Pastel on Paper, 20.5×30cm",
       "category": "Landscape",
       "sold": false,
@@ -932,9 +932,9 @@ window.GALLERY = {
       "th": 417
     },
     {
-      "file": "images/paintings/4 Watercolor/25-sold-watercolor-3-76x57cm-arches-640g.webp",
-      "thumb": "images/paintings/4 Watercolor/thumb/25-sold-watercolor-3-76x57cm-arches-640g.webp",
-      "title": "Watercolor 3 76x57cm Arches 640g",
+      "file": "images/paintings/4 Watercolor/25-watercolor-76x57-SOLD.webp",
+      "thumb": "images/paintings/4 Watercolor/thumb/25-watercolor-76x57-SOLD.webp",
+      "title": "Watercolor, 76×57cm",
       "category": "Watercolor",
       "sold": true,
       "w": 1378,
@@ -943,9 +943,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/4 Watercolor/28-watercolor-4-76x57cm-arches-640g.webp",
-      "thumb": "images/paintings/4 Watercolor/thumb/28-watercolor-4-76x57cm-arches-640g.webp",
-      "title": "Watercolor 4 76x57cm Arches 640g",
+      "file": "images/paintings/4 Watercolor/28-watercolor-76x57.webp",
+      "thumb": "images/paintings/4 Watercolor/thumb/28-watercolor-76x57.webp",
+      "title": "Watercolor, 76×57cm",
       "category": "Watercolor",
       "sold": false,
       "w": 1375,
@@ -954,9 +954,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/4 Watercolor/29-watercolor-5-76x57cm-arches-640g.webp",
-      "thumb": "images/paintings/4 Watercolor/thumb/29-watercolor-5-76x57cm-arches-640g.webp",
-      "title": "Watercolor 5 76x57cm Arches 640g",
+      "file": "images/paintings/4 Watercolor/29-watercolor-76x57.webp",
+      "thumb": "images/paintings/4 Watercolor/thumb/29-watercolor-76x57.webp",
+      "title": "Watercolor, 76×57cm",
       "category": "Watercolor",
       "sold": false,
       "w": 1395,
@@ -965,9 +965,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/4 Watercolor/30-watercolor-6-76x57cm-arches-640g.webp",
-      "thumb": "images/paintings/4 Watercolor/thumb/30-watercolor-6-76x57cm-arches-640g.webp",
-      "title": "Watercolor 6 76x57cm Arches 640g",
+      "file": "images/paintings/4 Watercolor/30-watercolor-76x57.webp",
+      "thumb": "images/paintings/4 Watercolor/thumb/30-watercolor-76x57.webp",
+      "title": "Watercolor, 76×57cm",
       "category": "Watercolor",
       "sold": false,
       "w": 1336,
@@ -976,9 +976,9 @@ window.GALLERY = {
       "th": 600
     },
     {
-      "file": "images/paintings/4 Watercolor/31-watercolor-5-76x57cm-archesg.webp",
-      "thumb": "images/paintings/4 Watercolor/thumb/31-watercolor-5-76x57cm-archesg.webp",
-      "title": "Watercolor 5 76x57cm Archesg",
+      "file": "images/paintings/4 Watercolor/31-watercolor-76x57.webp",
+      "thumb": "images/paintings/4 Watercolor/thumb/31-watercolor-76x57.webp",
+      "title": "Watercolor, 76×57cm",
       "category": "Watercolor",
       "sold": false,
       "w": 1395,
